@@ -1,20 +1,18 @@
-package object.Q2;
-
-import java.util.Scanner;
-
-public class main {
+public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        // 1. Instanciando o objeto da classe Cachorro
+        Cachorro meuCachorro = new Cachorro();
 
-        book[] books = new book[3];
+        // 2. Definindo o nome e a raça do cachorro
+        meuCachorro.nome = "Rex";
+        meuCachorro.raca = "Labrador";
 
-        for (int i = 0; i < books.length; i++) {
+        // 3. Imprimindo as informações do cachorro
+        System.out.println("Nome do cachorro: " + meuCachorro.nome);
+        System.out.println("Raça: " + meuCachorro.raca);
 
-            books[i] = new book();
-
-            books[i].readTitle(scan);
-            books[i].readAuthor(scan);
-            books[i].readPages(scan);
-        }
+        // 4. Chamando o método latir()
+        System.out.print("O cachorro latindo: ");
+        meuCachorro.latir();
     }
 }
