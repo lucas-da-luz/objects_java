@@ -14,7 +14,6 @@ public class ContaSimples {
     }
 
     public void exibirSaldo() {
-        System.out.println("--- SALDO ATUAL ---");
         System.out.println("Titular: " + titular);
         System.out.println("Saldo: R$ " + saldo);
     }
